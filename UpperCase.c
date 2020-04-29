@@ -14,8 +14,7 @@ void toUpperCase(char* text){
             text[l1]+='A'-'a';
         }
     }*/
-    for(char*ptext=text;ptext-text<len;*ptext=('a'<=*ptext&&*ptext<='z')?'A'-'a':0,ptext++);
-
+    for(char*ptext=text;ptext-text<len;*ptext=('a'<=*ptext&&*ptext<='z')?'A'-'a':0,ptext++); // sehr unleserlich
 }
 
 void test(char* text){
