@@ -8,7 +8,12 @@
  * turns the given String into upper-case characters
 */
 void toUpperCase(char* text){
-    
+    int len=strlen(text);
+    for(int l1=0;l1<len;++l1){
+        if('a'<=text[l1]&&text[l1]<='z'){
+            text[l1]+='A'-'a';
+        }
+    }
 }
 
 void test(char* text){
